@@ -1,0 +1,17 @@
+<head>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Built in Functions and Objects:</h1>
+    <h2>HTML event attributes let you inline javascript</h2>
+    <h3>Count:</h3>
+    <h4 id="count">0</h4>
+    <input id="text" onkeyup="count.innerHTML=this.value.length" placeholder="type here">
+    <button onclick='alert('clicked!')'">Click Me!</button>
+    <script>
+        console.log("I am hidden in the console!"); // Write something to the debugging terminal.
+        document.write("I write to the page."); // This is seldom done.
+        document.body.innerHTML += 6 * 7; // += appends to the page. Fastest but can lose events.
+        document.body.style = "color:green;"; //We can set CSS styles in javascript!
+    </script>
+</body>
